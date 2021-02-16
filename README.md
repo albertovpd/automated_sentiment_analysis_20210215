@@ -30,6 +30,10 @@ Afraid of using too much RAM, I usually split this step into 2 different CF, 1 f
 **Transfer**:
 - Takes the results and load it into the *results table* in BigQuery.
 
+**Cloud Storage**:
+Gdelt data is distributed in US servers. I think we need an US multi-region bucket, but let's try with a single-region one for the sake of costs and availability.
+![alt](pics/bucket_location.png)
+
 **Data Studio**
 - Plots that table.
 
